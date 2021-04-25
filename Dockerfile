@@ -7,5 +7,5 @@ COPY cls cls
 ENV STATIC_URL /static
 ENV STATIC_PATH /var/www/app/static
 RUN pip install --upgrade pip==20.3.3
-COPY ./requirements.txt /var/www/requirements.txt
-RUN pip install -r /var/www/requirements.txt
+COPY ./requirements_docker.txt /var/www/requirements_docker.txt
+RUN pip install -r /var/www/requirements_docker.txt
